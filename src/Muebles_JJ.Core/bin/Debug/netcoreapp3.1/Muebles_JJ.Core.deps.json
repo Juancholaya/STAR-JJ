@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Muebles_JJ.Core/1.0.0": {
+        "runtime": {
+          "Muebles_JJ.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Muebles_JJ.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
