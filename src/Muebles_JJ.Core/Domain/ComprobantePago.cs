@@ -7,6 +7,7 @@ namespace Muebles_JJ.Web
     {
         public int IdComprobante { get; set; }
         public int? IdVentaFk { get; set; }
+        public DateTime Fecha { get;set; }
 
         public virtual Venta IdVentaFkNavigation { get; set; }
     }

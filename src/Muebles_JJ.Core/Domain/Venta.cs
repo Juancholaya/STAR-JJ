@@ -16,6 +16,7 @@ namespace Muebles_JJ.Web
         public int? IdProductoFk { get; set; }
         public int? SubTotal { get; set; }
         public int? Total { get; set; }
+        public DateTime Fecha { get; set; }
 
         public virtual Producto IdProductoFkNavigation { get; set; }
         public virtual ICollection<ComprobantePago> ComprobantePago { get; set; }
