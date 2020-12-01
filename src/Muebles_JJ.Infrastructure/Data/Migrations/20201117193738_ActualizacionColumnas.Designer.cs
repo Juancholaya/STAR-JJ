@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Muebles_JJ.Web;
+using Muebles_JJ.Core.Domain;
 
 namespace Muebles_JJ.Infrastructure.Data.Migrations
 {
-    [DbContext(typeof(Muebles_JJDbContext))]
+    [DbContext(typeof(STAR_JJDbContext))]
     [Migration("20201117193738_ActualizacionColumnas")]
     partial class ActualizacionColumnas
     {

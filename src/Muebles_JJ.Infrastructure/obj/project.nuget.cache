@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lMEq0vi6yuAwOcv2DPqzZFweOTw18IzpWGY5un6aJG8BstX/gKMao3ZArAn5n8PyJwqSEDTDGhZcOjImNwPJDQ==",
+  "dgSpecHash": "WnCHT3S6BoJK7pSqHQEG+K/ZZQL5WQnpeYxOYhOy8v9xlb3P4Rpr6/cBYgi13KjEPWaIoYBsrMsiG53sm9UpNQ==",
   "success": true,
-  "projectFilePath": "D:\\SENA Juan\\Fase 2\\NET\\Visual Studio\\Proyecto\\Muebles_JJ\\src\\Muebles_JJ.Infrastructure\\Muebles_JJ.Infrastructure.csproj",
+  "projectFilePath": "D:\\ClonadoProyecto\\src\\Muebles_JJ.Infrastructure\\Muebles_JJ.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\edwin\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\edwin\\.nuget\\packages\\google.protobuf\\3.11.4\\google.protobuf.3.11.4.nupkg.sha512",

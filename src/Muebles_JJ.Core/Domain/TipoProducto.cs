@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Muebles_JJ.Web
+namespace Muebles_JJ.Core.Domain
 {
     public partial class TipoProducto
     {

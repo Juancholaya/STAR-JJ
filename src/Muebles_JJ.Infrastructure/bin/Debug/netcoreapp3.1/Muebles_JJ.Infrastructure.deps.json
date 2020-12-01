@@ -1203,6 +1203,9 @@
         }
       },
       "Muebles_JJ.Core/1.0.0": {
+        "dependencies": {
+          "MySql.Data": "8.0.22"
+        },
         "runtime": {
           "Muebles_JJ.Core.dll": {}
         }

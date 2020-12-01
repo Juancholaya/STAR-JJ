@@ -13,3 +13,18 @@ D:\SENA Juan\Fase 2\NET\Visual Studio\Proyecto\Muebles_JJ\src\Muebles_JJ.Infrast
 D:\SENA Juan\Fase 2\NET\Visual Studio\Proyecto\Muebles_JJ\src\Muebles_JJ.Infrastructure\obj\Debug\netcoreapp3.1\Muebles_JJ.Infrastructure.dll
 D:\SENA Juan\Fase 2\NET\Visual Studio\Proyecto\Muebles_JJ\src\Muebles_JJ.Infrastructure\obj\Debug\netcoreapp3.1\Muebles_JJ.Infrastructure.pdb
 D:\SENA Juan\Fase 2\NET\Visual Studio\Proyecto\Muebles_JJ\src\Muebles_JJ.Infrastructure\obj\Debug\netcoreapp3.1\Muebles_JJ.Infrastructure.genruntimeconfig.cache
+D:\ClonadoProyecto\src\Muebles_JJ.Infrastructure\bin\Debug\netcoreapp3.1\Muebles_JJ.Infrastructure.deps.json
+D:\ClonadoProyecto\src\Muebles_JJ.Infrastructure\bin\Debug\netcoreapp3.1\Muebles_JJ.Infrastructure.runtimeconfig.json
+D:\ClonadoProyecto\src\Muebles_JJ.Infrastructure\bin\Debug\netcoreapp3.1\Muebles_JJ.Infrastructure.runtimeconfig.dev.json
+D:\ClonadoProyecto\src\Muebles_JJ.Infrastructure\bin\Debug\netcoreapp3.1\Muebles_JJ.Infrastructure.dll
+D:\ClonadoProyecto\src\Muebles_JJ.Infrastructure\bin\Debug\netcoreapp3.1\Muebles_JJ.Infrastructure.pdb
+D:\ClonadoProyecto\src\Muebles_JJ.Infrastructure\bin\Debug\netcoreapp3.1\Muebles_JJ.Core.dll
+D:\ClonadoProyecto\src\Muebles_JJ.Infrastructure\bin\Debug\netcoreapp3.1\Muebles_JJ.Core.pdb
+D:\ClonadoProyecto\src\Muebles_JJ.Infrastructure\obj\Debug\netcoreapp3.1\Muebles_JJ.Infrastructure.csprojAssemblyReference.cache
+D:\ClonadoProyecto\src\Muebles_JJ.Infrastructure\obj\Debug\netcoreapp3.1\Muebles_JJ.Infrastructure.AssemblyInfoInputs.cache
+D:\ClonadoProyecto\src\Muebles_JJ.Infrastructure\obj\Debug\netcoreapp3.1\Muebles_JJ.Infrastructure.AssemblyInfo.cs
+D:\ClonadoProyecto\src\Muebles_JJ.Infrastructure\obj\Debug\netcoreapp3.1\Muebles_JJ.Infrastructure.csproj.CoreCompileInputs.cache
+D:\ClonadoProyecto\src\Muebles_JJ.Infrastructure\obj\Debug\netcoreapp3.1\Muebles_JJ.Infrastructure.csproj.CopyComplete
+D:\ClonadoProyecto\src\Muebles_JJ.Infrastructure\obj\Debug\netcoreapp3.1\Muebles_JJ.Infrastructure.dll
+D:\ClonadoProyecto\src\Muebles_JJ.Infrastructure\obj\Debug\netcoreapp3.1\Muebles_JJ.Infrastructure.pdb
+D:\ClonadoProyecto\src\Muebles_JJ.Infrastructure\obj\Debug\netcoreapp3.1\Muebles_JJ.Infrastructure.genruntimeconfig.cache

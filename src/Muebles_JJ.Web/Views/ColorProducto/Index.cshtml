@@ -1,0 +1,29 @@
+﻿@model List<Muebles_JJ.Core.Domain.ColorProducto>
+    @{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+    <h1>Color Producto</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id Color</th>
+                <th>Nombre</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var fila in Model)
+            {
+            <tr>
+                <td>@Html.Raw(fila.ID_Color)</td>
+                <td>@Html.Raw(fila.Nombre)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@fila.ID_Color">Edit</a> 
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>

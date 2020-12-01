@@ -1767,6 +1767,9 @@
       "Muebles_JJ.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "MySql.Data": "8.0.22"
+        },
         "compile": {
           "bin/placeholder/Muebles_JJ.Core.dll": {}
         },
@@ -6228,11 +6231,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SENA Juan\\Fase 2\\NET\\Visual Studio\\Proyecto\\Muebles_JJ\\src\\Muebles_JJ.Infrastructure\\Muebles_JJ.Infrastructure.csproj",
+      "projectUniqueName": "D:\\ClonadoProyecto\\src\\Muebles_JJ.Infrastructure\\Muebles_JJ.Infrastructure.csproj",
       "projectName": "Muebles_JJ.Infrastructure",
-      "projectPath": "D:\\SENA Juan\\Fase 2\\NET\\Visual Studio\\Proyecto\\Muebles_JJ\\src\\Muebles_JJ.Infrastructure\\Muebles_JJ.Infrastructure.csproj",
+      "projectPath": "D:\\ClonadoProyecto\\src\\Muebles_JJ.Infrastructure\\Muebles_JJ.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\edwin\\.nuget\\packages\\",
-      "outputPath": "D:\\SENA Juan\\Fase 2\\NET\\Visual Studio\\Proyecto\\Muebles_JJ\\src\\Muebles_JJ.Infrastructure\\obj\\",
+      "outputPath": "D:\\ClonadoProyecto\\src\\Muebles_JJ.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\edwin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6248,8 +6251,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\SENA Juan\\Fase 2\\NET\\Visual Studio\\Proyecto\\Muebles_JJ\\src\\Muebles_JJ.Core\\Muebles_JJ.Core.csproj": {
-              "projectPath": "D:\\SENA Juan\\Fase 2\\NET\\Visual Studio\\Proyecto\\Muebles_JJ\\src\\Muebles_JJ.Core\\Muebles_JJ.Core.csproj"
+            "D:\\ClonadoProyecto\\src\\Muebles_JJ.Core\\Muebles_JJ.Core.csproj": {
+              "projectPath": "D:\\ClonadoProyecto\\src\\Muebles_JJ.Core\\Muebles_JJ.Core.csproj"
             }
           }
         }

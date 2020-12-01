@@ -3,11 +3,11 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Muebles_JJ.Web;
+using Muebles_JJ.Core.Domain;
 
 namespace Muebles_JJ.Infrastructure.Data.Migrations
 {
-    [DbContext(typeof(Muebles_JJDbContext))]
+    [DbContext(typeof(STAR_JJDbContext))]
     partial class Muebles_JJDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -27,12 +27,12 @@ namespace Muebles_JJ.Infrastructure.Data.Migrations
                     b.Property<int?>("Cantidad")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int(10)")
-                        .HasDefaultValueSql("'NULL'");
+                        .HasDefaultValueSql("0");
 
                     b.Property<string>("Tipo")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("varchar(30)")
-                        .HasDefaultValueSql("'NULL'")
+                        .HasDefaultValueSql("0")
                         .HasMaxLength(30);
 
                     b.HasKey("IdCantidad")
@@ -73,7 +73,7 @@ namespace Muebles_JJ.Infrastructure.Data.Migrations
                     b.Property<int?>("IdVentaFk")
                         .HasColumnName("ID_Venta_FK")
                         .HasColumnType("int(2)")
-                        .HasDefaultValueSql("'NULL'");
+                        .HasDefaultValueSql("0");
 
                     b.HasKey("IdComprobante")
                         .HasName("PRIMARY");
@@ -94,7 +94,7 @@ namespace Muebles_JJ.Infrastructure.Data.Migrations
                     b.Property<int?>("Numero")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int(20)")
-                        .HasDefaultValueSql("'NULL'");
+                        .HasDefaultValueSql("0");
 
                     b.Property<string>("Tipo")
                         .ValueGeneratedOnAdd()
@@ -118,7 +118,7 @@ namespace Muebles_JJ.Infrastructure.Data.Migrations
                     b.Property<int?>("IdCantidadFk")
                         .HasColumnName("ID_Cantidad_FK")
                         .HasColumnType("int(2)")
-                        .HasDefaultValueSql("'NULL'");
+                        .HasDefaultValueSql("0");
 
                     b.Property<string>("Nombre")
                         .ValueGeneratedOnAdd()
@@ -151,12 +151,12 @@ namespace Muebles_JJ.Infrastructure.Data.Migrations
                     b.Property<int?>("IdInsumoFk")
                         .HasColumnName("ID_Insumo_FK")
                         .HasColumnType("int(2)")
-                        .HasDefaultValueSql("'NULL'");
+                        .HasDefaultValueSql("0");
 
                     b.Property<int?>("IdProductoFk")
                         .HasColumnName("ID_Producto_FK")
                         .HasColumnType("int(2)")
-                        .HasDefaultValueSql("'NULL'");
+                        .HasDefaultValueSql("0");
 
                     b.HasKey("IdInventario")
                         .HasName("PRIMARY");
@@ -200,7 +200,7 @@ namespace Muebles_JJ.Infrastructure.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnName("Cantidad_Centimetros")
                         .HasColumnType("int(10)")
-                        .HasDefaultValueSql("'NULL'");
+                        .HasDefaultValueSql("0");
 
                     b.HasKey("IdMedida")
                         .HasName("PRIMARY");
@@ -228,7 +228,7 @@ namespace Muebles_JJ.Infrastructure.Data.Migrations
                     b.Property<int?>("IdVentaFk")
                         .HasColumnName("ID_Venta_FK")
                         .HasColumnType("int(2)")
-                        .HasDefaultValueSql("'NULL'");
+                        .HasDefaultValueSql("0");
 
                     b.HasKey("IdPedido")
                         .HasName("PRIMARY");
@@ -255,7 +255,7 @@ namespace Muebles_JJ.Infrastructure.Data.Migrations
                     b.Property<int?>("IdDocumentoFk")
                         .HasColumnName("ID_Documento_FK")
                         .HasColumnType("int(1)")
-                        .HasDefaultValueSql("'NULL'");
+                        .HasDefaultValueSql("0");
 
                     b.Property<string>("PrimerApellido")
                         .ValueGeneratedOnAdd()
@@ -304,22 +304,22 @@ namespace Muebles_JJ.Infrastructure.Data.Migrations
                     b.Property<int?>("IdColorFk")
                         .HasColumnName("ID_Color_FK")
                         .HasColumnType("int(2)")
-                        .HasDefaultValueSql("'NULL'");
+                        .HasDefaultValueSql("0");
 
                     b.Property<int?>("IdMaterialFk")
                         .HasColumnName("ID_Material_FK")
                         .HasColumnType("int(2)")
-                        .HasDefaultValueSql("'NULL'");
+                        .HasDefaultValueSql("0");
 
                     b.Property<int?>("IdMedidaFk")
                         .HasColumnName("ID_Medida_FK")
                         .HasColumnType("int(30)")
-                        .HasDefaultValueSql("'NULL'");
+                        .HasDefaultValueSql("0");
 
                     b.Property<int?>("IdTipoFk")
                         .HasColumnName("ID_Tipo_FK")
                         .HasColumnType("int(2)")
-                        .HasDefaultValueSql("'NULL'");
+                        .HasDefaultValueSql("0");
 
                     b.HasKey("IdProducto")
                         .HasName("PRIMARY");
@@ -368,17 +368,17 @@ namespace Muebles_JJ.Infrastructure.Data.Migrations
                     b.Property<int?>("Extension")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int(4)")
-                        .HasDefaultValueSql("'NULL'");
+                        .HasDefaultValueSql("0");
 
                     b.Property<int?>("IdUsuarioFk")
                         .HasColumnName("ID_Usuario_FK")
                         .HasColumnType("int(10)")
-                        .HasDefaultValueSql("'NULL'");
+                        .HasDefaultValueSql("0");
 
                     b.Property<int?>("Numero")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int(10)")
-                        .HasDefaultValueSql("'NULL'");
+                        .HasDefaultValueSql("0");
 
                     b.Property<string>("Tipo")
                         .ValueGeneratedOnAdd()
@@ -431,12 +431,12 @@ namespace Muebles_JJ.Infrastructure.Data.Migrations
                     b.Property<int?>("IdPersonaFk")
                         .HasColumnName("ID_Persona_FK")
                         .HasColumnType("int(10)")
-                        .HasDefaultValueSql("'NULL'");
+                        .HasDefaultValueSql("0");
 
                     b.Property<int?>("IdRolFk")
                         .HasColumnName("ID_Rol_FK")
                         .HasColumnType("int(2)")
-                        .HasDefaultValueSql("'NULL'");
+                        .HasDefaultValueSql("0");
 
                     b.Property<string>("NombreUsuario")
                         .ValueGeneratedOnAdd()
@@ -468,7 +468,7 @@ namespace Muebles_JJ.Infrastructure.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnName("Cantidad_Producto")
                         .HasColumnType("int(10)")
-                        .HasDefaultValueSql("'NULL'");
+                        .HasDefaultValueSql("0");
 
                     b.Property<DateTime>("Fecha")
                         .HasColumnType("datetime");
@@ -476,18 +476,18 @@ namespace Muebles_JJ.Infrastructure.Data.Migrations
                     b.Property<int?>("IdProductoFk")
                         .HasColumnName("ID_Producto_FK")
                         .HasColumnType("int(2)")
-                        .HasDefaultValueSql("'NULL'");
+                        .HasDefaultValueSql("0");
 
                     b.Property<int?>("SubTotal")
                         .ValueGeneratedOnAdd()
                         .HasColumnName("Sub_Total")
                         .HasColumnType("int(10)")
-                        .HasDefaultValueSql("'NULL'");
+                        .HasDefaultValueSql("0");
 
                     b.Property<int?>("Total")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int(10)")
-                        .HasDefaultValueSql("'NULL'");
+                        .HasDefaultValueSql("0");
 
                     b.HasKey("IdVenta")
                         .HasName("PRIMARY");

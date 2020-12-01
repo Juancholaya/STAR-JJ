@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Muebles_JJ.Core;
+using Muebles_JJ.Core.Domain;
 
 namespace Muebles_JJ.Infrastructure.Data
 {
@@ -9,5 +9,7 @@ namespace Muebles_JJ.Infrastructure.Data
         {
 
         }
+
+        public DbSet<ColorProducto> ColorProducto { get; set; }
     }
 }

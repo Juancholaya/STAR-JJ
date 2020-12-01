@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
+using Muebles_JJ.Infrastructure.Data;
 
 namespace Muebles_JJ.Web
 {
@@ -24,6 +25,8 @@ namespace Muebles_JJ.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<STAR_JJDbContext>(options =>
+                options.UseMySQL(Configuration.GetConnectionString("Muebles_JJConnection")));
             services.AddControllersWithViews();
         }
 

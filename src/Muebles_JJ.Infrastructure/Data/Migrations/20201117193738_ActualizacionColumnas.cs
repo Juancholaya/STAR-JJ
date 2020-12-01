@@ -15,7 +15,7 @@ namespace Muebles_JJ.Infrastructure.Data.Migrations
                     ID_Cantidad = table.Column<int>(type: "int(2)", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     Tipo = table.Column<string>(maxLength: 30, nullable: true, defaultValueSql: "'NULL'"),
-                    Cantidad = table.Column<int>(type: "int(10)", nullable: true, defaultValueSql: "'NULL'")
+                    Cantidad = table.Column<int>(type: "int(10)", nullable: true, defaultValueSql: "0")
                 },
                 constraints: table =>
                 {
@@ -42,7 +42,7 @@ namespace Muebles_JJ.Infrastructure.Data.Migrations
                     ID_Documento = table.Column<int>(type: "int(1)", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     Tipo = table.Column<string>(maxLength: 30, nullable: true, defaultValueSql: "'NULL'"),
-                    Numero = table.Column<int>(type: "int(20)", nullable: true, defaultValueSql: "'NULL'")
+                    Numero = table.Column<int>(type: "int(20)", nullable: true, defaultValueSql: "0")
                 },
                 constraints: table =>
                 {
@@ -68,7 +68,7 @@ namespace Muebles_JJ.Infrastructure.Data.Migrations
                 {
                     ID_Medida = table.Column<int>(type: "int(2)", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    Cantidad_Centimetros = table.Column<int>(type: "int(10)", nullable: true, defaultValueSql: "'NULL'")
+                    Cantidad_Centimetros = table.Column<int>(type: "int(10)", nullable: true, defaultValueSql: "0")
                 },
                 constraints: table =>
                 {
@@ -108,7 +108,7 @@ namespace Muebles_JJ.Infrastructure.Data.Migrations
                     ID_Insumo = table.Column<int>(type: "int(2)", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     Nombre = table.Column<string>(maxLength: 20, nullable: true, defaultValueSql: "'NULL'"),
-                    ID_Cantidad_FK = table.Column<int>(type: "int(2)", nullable: true, defaultValueSql: "'NULL'")
+                    ID_Cantidad_FK = table.Column<int>(type: "int(2)", nullable: true, defaultValueSql: "0")
                 },
                 constraints: table =>
                 {
@@ -132,7 +132,7 @@ namespace Muebles_JJ.Infrastructure.Data.Migrations
                     Primer_Apellido = table.Column<string>(maxLength: 10, nullable: true, defaultValueSql: "'NULL'"),
                     Segundo_Apellido = table.Column<string>(maxLength: 10, nullable: true, defaultValueSql: "'NULL'"),
                     Direccion = table.Column<string>(maxLength: 50, nullable: true, defaultValueSql: "'NULL'"),
-                    ID_Documento_FK = table.Column<int>(type: "int(1)", nullable: true, defaultValueSql: "'NULL'")
+                    ID_Documento_FK = table.Column<int>(type: "int(1)", nullable: true, defaultValueSql: "0")
                 },
                 constraints: table =>
                 {
@@ -151,10 +151,10 @@ namespace Muebles_JJ.Infrastructure.Data.Migrations
                 {
                     ID_Producto = table.Column<int>(type: "int(2)", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    ID_Tipo_FK = table.Column<int>(type: "int(2)", nullable: true, defaultValueSql: "'NULL'"),
-                    ID_Material_FK = table.Column<int>(type: "int(2)", nullable: true, defaultValueSql: "'NULL'"),
-                    ID_Color_FK = table.Column<int>(type: "int(2)", nullable: true, defaultValueSql: "'NULL'"),
-                    ID_Medida_FK = table.Column<int>(type: "int(30)", nullable: true, defaultValueSql: "'NULL'")
+                    ID_Tipo_FK = table.Column<int>(type: "int(2)", nullable: true, defaultValueSql: "0"),
+                    ID_Material_FK = table.Column<int>(type: "int(2)", nullable: true, defaultValueSql: "0"),
+                    ID_Color_FK = table.Column<int>(type: "int(2)", nullable: true, defaultValueSql: "0"),
+                    ID_Medida_FK = table.Column<int>(type: "int(30)", nullable: true, defaultValueSql: "0")
                 },
                 constraints: table =>
                 {
@@ -193,8 +193,8 @@ namespace Muebles_JJ.Infrastructure.Data.Migrations
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     Nombre_Usuario = table.Column<string>(maxLength: 30, nullable: true, defaultValueSql: "'NULL'"),
                     Contraseña_Usuario = table.Column<string>(maxLength: 30, nullable: true, defaultValueSql: "'NULL'"),
-                    ID_Persona_FK = table.Column<int>(type: "int(10)", nullable: true, defaultValueSql: "'NULL'"),
-                    ID_Rol_FK = table.Column<int>(type: "int(2)", nullable: true, defaultValueSql: "'NULL'")
+                    ID_Persona_FK = table.Column<int>(type: "int(10)", nullable: true, defaultValueSql: "0"),
+                    ID_Rol_FK = table.Column<int>(type: "int(2)", nullable: true, defaultValueSql: "0")
                 },
                 constraints: table =>
                 {
@@ -219,8 +219,8 @@ namespace Muebles_JJ.Infrastructure.Data.Migrations
                 {
                     ID_Inventario = table.Column<int>(type: "int(2)", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    ID_Insumo_FK = table.Column<int>(type: "int(2)", nullable: true, defaultValueSql: "'NULL'"),
-                    ID_Producto_FK = table.Column<int>(type: "int(2)", nullable: true, defaultValueSql: "'NULL'"),
+                    ID_Insumo_FK = table.Column<int>(type: "int(2)", nullable: true, defaultValueSql: "0"),
+                    ID_Producto_FK = table.Column<int>(type: "int(2)", nullable: true, defaultValueSql: "0"),
                     Fecha_Entrada = table.Column<DateTime>(nullable: false),
                     Fecha_Salida = table.Column<DateTime>(nullable: false)
                 },
@@ -247,10 +247,10 @@ namespace Muebles_JJ.Infrastructure.Data.Migrations
                 {
                     ID_Venta = table.Column<int>(type: "int(2)", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    Cantidad_Producto = table.Column<int>(type: "int(10)", nullable: true, defaultValueSql: "'NULL'"),
-                    ID_Producto_FK = table.Column<int>(type: "int(2)", nullable: true, defaultValueSql: "'NULL'"),
-                    Sub_Total = table.Column<int>(type: "int(10)", nullable: true, defaultValueSql: "'NULL'"),
-                    Total = table.Column<int>(type: "int(10)", nullable: true, defaultValueSql: "'NULL'"),
+                    Cantidad_Producto = table.Column<int>(type: "int(10)", nullable: true, defaultValueSql: "0"),
+                    ID_Producto_FK = table.Column<int>(type: "int(2)", nullable: true, defaultValueSql: "0"),
+                    Sub_Total = table.Column<int>(type: "int(10)", nullable: true, defaultValueSql: "0"),
+                    Total = table.Column<int>(type: "int(10)", nullable: true, defaultValueSql: "0"),
                     Fecha = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
@@ -271,9 +271,9 @@ namespace Muebles_JJ.Infrastructure.Data.Migrations
                     ID_Telefono = table.Column<int>(type: "int(1)", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     Tipo = table.Column<string>(maxLength: 30, nullable: true, defaultValueSql: "'NULL'"),
-                    Numero = table.Column<int>(type: "int(10)", nullable: true, defaultValueSql: "'NULL'"),
-                    Extension = table.Column<int>(type: "int(4)", nullable: true, defaultValueSql: "'NULL'"),
-                    ID_Usuario_FK = table.Column<int>(type: "int(10)", nullable: true, defaultValueSql: "'NULL'")
+                    Numero = table.Column<int>(type: "int(10)", nullable: true, defaultValueSql: "0"),
+                    Extension = table.Column<int>(type: "int(4)", nullable: true, defaultValueSql: "0"),
+                    ID_Usuario_FK = table.Column<int>(type: "int(10)", nullable: true, defaultValueSql: "0")
                 },
                 constraints: table =>
                 {
@@ -292,7 +292,7 @@ namespace Muebles_JJ.Infrastructure.Data.Migrations
                 {
                     ID_Comprobante = table.Column<int>(type: "int(2)", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    ID_Venta_FK = table.Column<int>(type: "int(2)", nullable: true, defaultValueSql: "'NULL'"),
+                    ID_Venta_FK = table.Column<int>(type: "int(2)", nullable: true, defaultValueSql: "0"),
                     Fecha = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
@@ -313,7 +313,7 @@ namespace Muebles_JJ.Infrastructure.Data.Migrations
                     ID_Pedido = table.Column<int>(type: "int(2)", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     Direccion_Entrega = table.Column<string>(maxLength: 30, nullable: true, defaultValueSql: "'NULL'"),
-                    ID_Venta_FK = table.Column<int>(type: "int(2)", nullable: true, defaultValueSql: "'NULL'"),
+                    ID_Venta_FK = table.Column<int>(type: "int(2)", nullable: true, defaultValueSql: "0"),
                     Fecha_Entrega = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
